@@ -6,7 +6,7 @@ REPL Coder is a Visual Studio Code extension that lets you quickly send code sni
 
 You can install the extension in Visual Studio Code by following these steps:
 
-1. Download the latest release from the [REPL Coder GitHub repository](https://github.com/johnwoodill/repl-coder/releases).
+1. Download the latest release from the [REPL Coder GitHub repository](https://github.com/johnwoodill/repl-coder/).
 2. In Visual Studio Code, open the Extensions view by clicking on the Extensions icon in the left-hand sidebar or by using the `Ctrl+Shift+X` keyboard shortcut.
 3. Click on the `...` button in the Extensions view header, and then click on "Install from VSIX..."
 4. In the file picker dialog, select the `.vsix` file that you downloaded in step 1.
