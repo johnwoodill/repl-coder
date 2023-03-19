@@ -1,71 +1,31 @@
-# repl-coder README
+# REPL Coder
 
-This is the README for your extension "repl-coder". After writing up a brief description, we recommend including the following sections.
+REPL Coder is a Visual Studio Code extension that lets you quickly send code snippets to a terminal window for testing or debugging. You can send a single line or a block of indented code to the terminal, and the extension will automatically detect the level of indentation and send the code with the correct formatting.
 
-## Features
+## Installation
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+You can install the extension in Visual Studio Code by following these steps:
 
-For example if there is an image subfolder under your extension project workspace:
+1. Download the latest release from the [REPL Coder GitHub repository](https://github.com/johnwoodill/repl-coder/releases).
+2. In Visual Studio Code, open the Extensions view by clicking on the Extensions icon in the left-hand sidebar or by using the `Ctrl+Shift+X` keyboard shortcut.
+3. Click on the `...` button in the Extensions view header, and then click on "Install from VSIX..."
+4. In the file picker dialog, select the `.vsix` file that you downloaded in step 1.
+5. VS Code will install the extension and prompt you to restart the editor. After restarting, the extension will be active.
 
-\!\[feature X\]\(images/feature-x.png\)
+## Usage
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+REPL Coder provides the following commands:
 
-## Requirements
+* `REPL Coder: Send Line to Terminal` (`Ctrl+Enter`): Send the current line to the terminal.
+* `REPL Coder: Send Indented Block to Terminal` (`Shift+Ctrl+Enter`): Send the current block of indented code to the terminal.
+* `REPL Coder: Send Line and Indented Block to Terminal` (`Alt+Ctrl+Enter`): Send both the current line and the current block of indented code to the terminal.
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+When you execute one of these commands, the code is sent to the first terminal window in the list of open terminal windows. If there are no terminal windows open, a new one is created.
 
-## Extension Settings
+If you use the `Send Indented Block to Terminal` command, the extension will automatically detect the level of indentation of the selected code and send it to the terminal with the correct formatting. If you use the `Send Line and Indented Block to Terminal` command, both the current line and the current block of indented code will be sent to the terminal.
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+Note that when you use the `Send Indented Block to Terminal` or `Send Line and Indented Block to Terminal` commands, the cursor will move to the next non-indented line in the editor.
 
-For example:
+## License
 
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+This extension is licensed under the [MIT License](LICENSE).
